@@ -7,5 +7,4 @@
     ./plugins
     ./opts.nix
   ];
-  snippets.enable = lib.mkDefault true;
 }
