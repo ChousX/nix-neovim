@@ -18,6 +18,7 @@
           }
           {name = "path";}
           {name = "buffer";}
+          {name = "luasnip";}
         ];
         mapping = {
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";

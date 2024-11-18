@@ -1,14 +1,8 @@
 {
-  lib,
-  config,
   pkgs,
   ...
 }:
 {
-  options = {
-    luasnip.enable = lib.mkEnableOption "Enable luasnip module";
-  };
-  config = lib.mkIf config.luasnip.enable {
     plugins.luasnip = {
       enable = true;
       settings = {
@@ -26,8 +20,4 @@
         }
       ];
     };
-    plugins.cmp.settings.sources = [
-      {name = "luasnip";}
-    ];
-  };
 }
