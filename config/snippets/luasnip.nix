@@ -22,9 +22,12 @@
         }
         {
           lazyLoad = true;
-          paths = ./luasnips;
+          paths = ./luasnips/bevy.code-snippets;
         }
       ];
     };
+    plugins.cmp.settings.sources = [
+      {name = "luasnip";}
+    ];
   };
 }
