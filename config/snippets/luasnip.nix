@@ -20,6 +20,10 @@
           lazyLoad = true;
           paths = "${pkgs.vimPlugins.friendly-snippets}";
         }
+        {
+          lazyLoad = true;
+          paths = ./luasnips;
+        }
       ];
     };
   };
