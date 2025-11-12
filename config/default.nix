@@ -5,5 +5,6 @@
     ./language
     ./plugins
     ./opts.nix
+    ./keymaps
   ];
 }
