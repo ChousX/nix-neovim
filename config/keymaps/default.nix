@@ -1,7 +1,7 @@
 {
   globals.mapleader = " ";
-  keymaps = [
-    import ./format.nix
-    #import ./code_completion.nix	
-  ];
+  keymaps = 
+    (import ./format.nix) ++ 
+    (import ./oil.nix) ++ 
+    [ ];
 }
