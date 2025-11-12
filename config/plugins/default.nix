@@ -1,6 +1,6 @@
 {
   imports = [
-    ./oil.nix
+    ./nvim-tree.nix
     ./which-key.nix
   ];
 }

@@ -3,16 +3,18 @@ plugins.nvim-tree = {
   enable = true;
   openOnSetup = false;
   autoClose = false;
-  view = {
-    width = 30;
-    side = "right";
+  settings = {
+    filters = {
+      dotfiles = false;  # Show hidden files
+      };
+      view = {
+        width = 30;
+        side = "right";
+      };
+      git = {
+        enable = true;
+        ignore = false;
+      };
+    };
   };
-  filters = {
-    dotfiles = false;  # Show hidden files
-  };
-  git = {
-    enable = true;
-    ignore = false;
-  };
-};
 }
