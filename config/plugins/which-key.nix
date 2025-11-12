@@ -1,3 +1,3 @@
 {
-  plugins.which-key.nix.enable = true;
+  plugins.which-key.enable = true;
 }
