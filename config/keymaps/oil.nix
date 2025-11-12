@@ -15,7 +15,10 @@
         if oil_bufnr then
           local oil_winid = vim.fn.bufwinid(oil_bufnr)
           if oil_winid ~= -1 then
-            vim.api.nvim_win_close(oil_winid, false)
+            -- Only close if there's more than one window
+            if #vim.api.nvim_tabpage_list_wins(0) > 1 then
+              vim.api.nvim_win_close(oil_winid, false)
+            end
           else
             vim.cmd("vsplit")
             vim.api.nvim_set_current_buf(oil_bufnr)

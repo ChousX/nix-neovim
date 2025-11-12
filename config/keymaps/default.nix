@@ -2,6 +2,6 @@
   globals.mapleader = " ";
   keymaps = 
     (import ./format.nix) ++ 
-    (import ./oil.nix) ++ 
+    (import ./nvim-tree.nix) ++ 
     [ ];
 }
