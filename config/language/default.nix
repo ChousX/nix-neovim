@@ -4,46 +4,14 @@
     ./nix.nix
   ];
   plugins = {
-    lsp = {
-      enable = true;
-      servers = {
-        efm = {
-          enable = true;
-          extraOptions = {
-            init_options = {
-              documentFormatting = true;
-              documentRangeFormatting = true;
-            };
-          };
-          settings = {
-            rootMarkers = [ ".git/" ];
-            languages = {
-              rust = [
-                {
-                  formatCommand = "rustfmt";
-                  formatStdin = true;
-                }
-              ];
-              nix = [ 
-                {
-                  formatCommand = "nixpkfs-fmt";
-                  formatStdin = true;
-                }
-              ];
-            };
-          };
-        };
-      };
-    };
+    lsp.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = true;
       settings = {
         sources = [
           {
-	          name = "nvim_lsp";
-	          keywordLength = 3;
-          }
+	          name = "nvim_lsp"; keywordLength = 3; }
           {name = "path";}
           {name = "buffer";}
           {name = "luasnip";}

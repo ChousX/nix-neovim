@@ -71,6 +71,7 @@
             markdown = ["prettier"];
             nix = ["alejandra"];
             ruby = ["rubyfmt"];
+            rust = ["rustfmt"];
             terraform = ["tofu_fmt"];
             tf = ["tofu_fmt"];
             yaml = ["yamlfmt"];
