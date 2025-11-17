@@ -1,5 +1,5 @@
 {
-  plugins.wgsl-analyzer = {
+  plugins.wgsl= {
     enable = true;
   };
 }

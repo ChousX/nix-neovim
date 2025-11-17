@@ -2,7 +2,6 @@
   imports = [
     ./rust.nix
     ./nix.nix
-    ./wgsl.nix
   ];
   plugins = {
     lsp.enable = true;
