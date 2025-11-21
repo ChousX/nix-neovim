@@ -1,4 +1,4 @@
-{
+{pkgs, ...}:{
   imports = [
     ./rust.nix
     ./nix.nix

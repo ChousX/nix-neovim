@@ -18,5 +18,9 @@
         wgsl = "wgsl"
       }
     })
+
+     -- Register both parsers with treesitter
+    vim.treesitter.language.register('wgsl', 'wgsl')
+    vim.treesitter.language.register('bevy_wgsl', 'wgsl')
   '';
 }
