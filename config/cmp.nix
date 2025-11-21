@@ -76,6 +76,7 @@
             terraform = ["tofu_fmt"];
             tf = ["tofu_fmt"];
             yaml = ["yamlfmt"];
+            wgsl = ["wgslfmt"];
           };
         };
       };
