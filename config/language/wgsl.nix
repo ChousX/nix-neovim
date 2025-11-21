@@ -1,5 +1,3 @@
 {
-  plugins.wgsl= {
-    enable = true;
-  };
+  plugins.lsp.wgsl_analyzer.enable = true;
 }
