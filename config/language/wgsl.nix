@@ -1,3 +1,7 @@
 {
-  plugins.lsp.wgsl_analyzer.enable = true;
+  plugins = {
+    lsp.servers.wgsl_analyzer = {
+      enable = true;
+    };
+  };
 }
