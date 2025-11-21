@@ -3,6 +3,7 @@
   plugins = {
     lsp.servers.wgsl_analyzer = {
       enable = true;
+      cmd = [ "${pkgs.wgsl-analyzer}/bin/wgsl-analyzer" ];
     };
     treesitter = {
       grammarPackages = [
@@ -11,7 +12,6 @@
     };
   };
   
-  # Add filetype detection for .wgsl files
   extraConfigLua = ''
     vim.filetype.add({
       extension = {

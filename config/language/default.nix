@@ -60,6 +60,7 @@
       settings = {
         auto_installed = false;
         folding = true;
+        highlight.enable = true;
       };
     };
   };
