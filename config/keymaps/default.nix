@@ -5,5 +5,6 @@
     (import ./nvim-tree.nix) ++ 
     (import ./fzf-lua.nix) ++ 
     (import ./rename_symble.nix) ++ 
+    (import ./code_action.nix) ++ 
     [ ];
 }
