@@ -1,14 +1,20 @@
 { pkgs, ... }:
 {
-  extraPlugins = [
+  plugins.telescope.enable = true;
+  
+  extraPlugins = with pkgs.vimPlugins; [
+    plenary-nvim
     (pkgs.vimUtils.buildVimPlugin {
       name = "bevy_inspector.nvim";
       src = pkgs.fetchFromGitHub {
         owner = "lommix";
         repo = "bevy_inspector.nvim";
-        rev = "main"; # or specify a commit hash for stability
-        hash = ""; # Run once to get the hash, nix will tell you the correct one
+        rev = "master";
+        hash = "sha256-sQO1xh6p8KkWVyRCYIiivlvkYXCob7UKd/C8WIFFL9A=";
       };
+      # Disable the require check since dependencies aren't available at build time
+      doCheck = false;
+      meta.broken = false;
     })
   ];
 
