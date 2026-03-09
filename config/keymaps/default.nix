@@ -6,7 +6,7 @@
     (import ./fzf-lua.nix) ++ 
     (import ./rename_symble.nix) ++ 
     (import ./code_action.nix) ++ 
-    (import ./bevy-inspector.nix) ++
+    #(import ./bevy-inspector.nix) ++
     #(import ./avante.nix) ++ 
     [ ];
 }
